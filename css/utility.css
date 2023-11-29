@@ -1,0 +1,30 @@
+:root {
+    /* Light Theme Colors */
+    --background-light: #ffffff;
+    --text-light: #333333;
+
+    /* Dark Theme Colors */
+    --background-dark: #333333;
+    --text-dark: #ffffff;
+
+    --transition-speed: 0.4s;
+}
+
+body {
+    transition: background-color var(--transition-speed), color var(--transition-speed);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Light Theme Styles */
+body.light-mode {
+    background-color: var(--background-light);
+    color: var(--text-light);
+}
+
+/* Dark Theme Styles */
+body.dark-mode {
+    background-color: var(--background-dark);
+    color: var(--text-dark);
+}
