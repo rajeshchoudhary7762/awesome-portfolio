@@ -13,17 +13,20 @@
     <link href="./css/style.css" rel="stylesheet">
 </head>
 <body>
-    <!-- <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg">
         <div class="container">
           <div class="navbar-brand d-flex me-0">
-            <div class="d-flex align-items-center"><a class="navbar-brand-logo" href="/">
-                <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_plus-055f80.svg"></a></div>
-            <div class="hamburger ms-auto"><i class="bi bi-list"></i></div>
+            <div class="brand-logo-container d-flex align-items-center">
+                <a class="navbar-brand-logo" href="/">
+                    <img src="./assets/images/facebook.png">
+                </a>
+            </div>
+            <div class="hamburger d-none ms-auto" id="hamBurger" onclick="openNavmenu()"><i class="bi bi-list"></i></div>
           </div>
           <div class="navbar-menu">
             <div class="navbar-start"></div>
-            <div class="navbar-end d-flex">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <div class="navbar-end">
+                <ul class="navbar-nav me-auto mb-0 mb-lg-0">
                     <li class="nav-item">
                       <a class="nav-link" aria-current="page" href="#">Home</a>
                     </li>
@@ -36,14 +39,16 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Contact</a>
                     </li>
+                    <li class="nav-item">
+                        <button class="toggle-theme" onclick="toggleTheme()" id="toggleTheme">
+                            <i class="bi bi-brightness-high"></i>
+                        </button>
+                    </li>
                 </ul>
-                <button class="toggle-theme" onclick="toggleTheme()" id="toggleTheme">
-                    <i class="bi bi-brightness-high"></i>
-                </button>
             </div>
           </div>
         </div>
-    </nav> -->
+    </nav>
     <section class="hero-section">
         <div class="hero-content">
             <div class="hero-heading">
@@ -216,11 +221,14 @@
         </div>
     </section>
     <footer class="footer-section">
+        <!-- <div class="wave-shape-container">
+            <img src="./assets/images/wave-2.svg" alt="shape">
+        </div> -->
         <div class="container">
             <div class="footer-container">
                 <div class="footer-content">
                     <div class="logo">
-                        <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_plus-055f80.svg" alt="logo">
+                        <img src="./assets/images/facebook.png" alt="logo">
                     </div>
                     <h5>Living, learning, & leveling up one day at a time.</h5>
                 </div>
