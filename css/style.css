@@ -391,7 +391,7 @@ section.about-section {
     }
     .navbar .navbar-menu {
         position: absolute;
-        top: 78px;
+        top: 75px;
         background: var(--primary-bg-color);
         width: 100%;
         left: 0;
