@@ -2,7 +2,6 @@
 function openNavmenu() {
   document.querySelector(".navbar-menu").classList.toggle("navbar-menu-active");
   document.querySelector(".toggle").classList.toggle("toggle-active");
-  document.querySelector(".bi").classList.toggle("bi-brightness-high");
 }
 
 // Function to toggle between light and dark themes
@@ -10,7 +9,6 @@ function toggleTheme() {
     const body = document.body;
     body.classList.toggle('light-mode');
     body.classList.toggle('dark-mode');
-    themeToggleIcon();
 
     //Set Current Theme On Local Stroge
     const currentTheme = body.className;
