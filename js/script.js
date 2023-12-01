@@ -9,6 +9,7 @@ function toggleTheme() {
     const body = document.body;
     body.classList.toggle('light-mode');
     body.classList.toggle('dark-mode');
+    themeToggleIcon();
 
     //Set Current Theme On Local Stroge
     const currentTheme = body.className;
