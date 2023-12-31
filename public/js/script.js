@@ -1,3 +1,27 @@
+function disableUserAction() {
+    // Disable right-click
+    document.addEventListener('contextmenu', function (e) {
+        e.preventDefault();
+    });
+
+    // Disable Ctrl+U
+    document.addEventListener('keydown', function (e) {
+        if (e.ctrlKey && e.key === 'u') {
+            e.preventDefault();
+        }
+    });
+
+    //Disable preloader
+    document.addEventListener("DOMContentLoaded", function () {
+        window.addEventListener("load", function () {
+          // Hide the preloader
+          document.getElementById("preLoader").style.display = "none";
+        });
+    });
+}
+disableUserAction();
+
+
 //Open Navbar menu
 function openNavmenu() {
   document.querySelector(".navbar-menu").classList.toggle("navbar-menu-active");
